@@ -12,7 +12,7 @@ const Layout = () => {
                     <a className="navbar-brand" href="#">Rick and Morthy</a>
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Home</a>
+                        <a className="nav-link active" aria-current="page" href="#">Información</a>
                         </li>
                     </ul>
                     </div>
