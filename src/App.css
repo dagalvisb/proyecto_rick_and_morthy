@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.bg-green{
+  background-color: green;
+}
+.bg-red{
+  background-color: red;
+}
+.bg-gray{
+  background-color: gray;
+}

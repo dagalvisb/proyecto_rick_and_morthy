@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.js'
+import RickAndMorthyCharacters from './Components/RickAndMorthyCharacters';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import CharacterDetais from './Components/CharacterDetails';
+import Layout from './Components/Layout.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' Component={Layout}>
+          <Route path='/' Component = {RickAndMorthyCharacters}></Route>
+          <Route path='/Characters/:id' Component={CharacterDetais}></Route> 
+          <Route path='/Prueba' element = {<p>prueba</p>}></Route> 
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
